@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.hero__label {
+  color: #5b5bf6;
+  font-weight: 600;
+}
+
+.hero__title {
+  font-size: 48px;
+  margin: 16px 0;
+}
+
+.hero__title small {
+  display: block;
+  font-size: 14px;
+  opacity: .6;
+}
+
+.hero__text {
+  max-width: 420px;
+  opacity: .7;
+  margin-bottom: 32px;
+}
+
+.hero__progress {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.hero__visual {
+  position: relative;
+}
+
+.hero__visual img {
+  max-width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.hero__tags span {
+  position: absolute;
+  padding: 8px 14px;
+  border: 1px solid #111;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.stats__item h2 {
+  font-size: 36px;
+}
+
+.stats__item p {
+  opacity: .6;
+}
+
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 120px;
+}
+
+.feature {
+  padding: 32px;
+}
+
+.feature.green { background: #e5f4ea; }
+.feature.yellow { background: #f5f6da; }
+.feature.pink { background: #f3e4f2; }
+
+/* PRICING */
+
+.pricing h2 {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.price-card {
+  padding: 40px;
+}
+
+.price-card.primary {
+  background: #5b5bf6;
+  color: #fff;
+}
+
+.price-card.light {
+  background: #e5f4ea;
+}
+
+.price {
+  margin: 32px 0;
+}
+
+.price .old {
+  text-decoration: line-through;
+  opacity: .6;
+}
+
+.price strong {
+  font-size: 36px;
+  display: block;
+}
+
+/* BUTTONS */
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary { background: #5b5bf6; color: #fff; }
+.btn.dark { background: #111; color: #fff; }
+.btn.light { background: #fff; color: #5b5bf6; }
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .stats,
+  .features,
+  .pricing__grid {
+    grid-template-columns: 1fr;
+  }
+}
